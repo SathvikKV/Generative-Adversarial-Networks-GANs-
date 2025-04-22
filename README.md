@@ -70,15 +70,18 @@ jupyter lab
 ```
 
 # Or
+
+```
 jupyter notebook
 
 Then open either:
 
 GAN_Data_Augmentation.ipynb - Main tutorial notebook
 GAN_Worked_Examples.ipynb - Comparative implementation
+```
+
 
 Web Demo
-
 
 To run the interactive web demo locally:
 ```bash
