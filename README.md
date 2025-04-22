@@ -19,7 +19,7 @@
 
 ## Interface
 
-[Demo Website](https://sathvikkv.github.io/Generative-Adversarial-Networks-GANs-/)
+# [Demo Website](https://sathvikkv.github.io/Generative-Adversarial-Networks-GANs-/)
 
 
 
