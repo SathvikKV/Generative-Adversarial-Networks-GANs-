@@ -29,37 +29,55 @@ This repository demonstrates the implementation and application of Generative Ad
 # Clone the repository
 git clone https://github.com/yourusername/gan-data-augmentation.git
 cd gan-data-augmentation
+```
 
 # Create a virtual environment (optional but recommended)
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
+```
+
 Usage
 Jupyter Notebooks
-bash# Start Jupyter Lab/Notebook
+```bash
+# Start Jupyter Lab/Notebook
 jupyter lab
+```
 
 # Or
 jupyter notebook
+
 Then open either:
 
 GAN_Data_Augmentation.ipynb - Main tutorial notebook
 GAN_Worked_Examples.ipynb - Comparative implementation
 
 Web Demo
+
+
 To run the interactive web demo locally:
-bash# Navigate to the web demo directory
+```bash
+Navigate to the web demo directory
 cd web_demo
+```
 
 # Start a simple HTTP server
+```bash
 python -m http.server
+```
 
 # Open your browser and go to:
 # http://localhost:8000
+
+
 GAN Architecture
 The implemented GAN architecture consists of:
+
 Generator
 
 Input: Random noise vector (100 dimensions)
@@ -82,9 +100,7 @@ Fashion-MNIST: Recognizable clothing items with longer training (~100 epochs)
 Successful class-conditional generation with CGANs
 Improved classifier performance using GAN-augmented training data
 
-Web Demo Screenshots
-Real vs. GAN ComparisonData Augmentation ViewShow ImageShow Image
-Training Tips
+
 For optimal GAN training:
 
 Use label smoothing (0.9 for real, 0.1 for fake)
