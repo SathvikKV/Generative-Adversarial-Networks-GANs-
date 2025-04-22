@@ -1,5 +1,4 @@
-Here's the complete README.md in a single cell for easy copying:
-markdown# Generative Adversarial Networks for Data Augmentation
+# Generative Adversarial Networks for Data Augmentation
 
 ![GAN Generated MNIST Images](gan/website/gan_outputs/real_mnist_3.png)
 ![GAN Generated MNIST Images](gan/website/gan_outputs/gan_mnist_3.png)
