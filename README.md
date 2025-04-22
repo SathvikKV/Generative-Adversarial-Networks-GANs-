@@ -69,69 +69,67 @@ cd web_demo
 # Start a simple HTTP server
 ```bash
 python -m http.server
+
+Open your browser and go to:
+
+http://localhost:8000
+
 ```
 
-# Open your browser and go to:
-# http://localhost:8000
 
+## GAN Architecture
 
-GAN Architecture
 The implemented GAN architecture consists of:
 
-Generator
+### Generator
+- Input: Random noise vector (100 dimensions)
+- Hidden layers: Dense + reshape, followed by transposed convolutions
+- Batch normalization and LeakyReLU activations
+- Output: 28×28×1 image with tanh activation
 
-Input: Random noise vector (100 dimensions)
-Hidden layers: Dense + reshape, followed by transposed convolutions
-Batch normalization and LeakyReLU activations
-Output: 28×28×1 image with tanh activation
+### Discriminator
+- Input: 28×28×1 image
+- Hidden layers: Convolutional layers with stride=2
+- LeakyReLU activations and dropout
+- Output: Single sigmoid unit (real/fake classification)
 
-Discriminator
+## Results
 
-Input: 28×28×1 image
-Hidden layers: Convolutional layers with stride=2
-LeakyReLU activations and dropout
-Output: Single sigmoid unit (real/fake classification)
-
-Results
 Our implementation achieves:
 
-MNIST: Clear, recognizable digits after ~50 epochs
-Fashion-MNIST: Recognizable clothing items with longer training (~100 epochs)
-Successful class-conditional generation with CGANs
-Improved classifier performance using GAN-augmented training data
+- MNIST: Clear, recognizable digits after ~50 epochs
+- Fashion-MNIST: Recognizable clothing items with longer training (~100 epochs)
+- Successful class-conditional generation with CGANs
+- Improved classifier performance using GAN-augmented training data
 
+## Training Tips
 
 For optimal GAN training:
 
-Use label smoothing (0.9 for real, 0.1 for fake)
-Apply batch normalization in the generator
-Use dropout in the discriminator (0.3-0.4)
-Balance generator/discriminator training carefully
-Start with a simpler dataset before tackling complex ones
+1. Use label smoothing (0.9 for real, 0.1 for fake)
+2. Apply batch normalization in the generator
+3. Use dropout in the discriminator (0.3-0.4)
+4. Balance generator/discriminator training carefully
+5. Start with a simpler dataset before tackling complex ones
 
-Implementation Challenges
+## Implementation Challenges
+
 Several challenges were encountered during implementation:
 
-Training Instability:
+1. **Training Instability**:
+   - Generator and discriminator losses oscillating rather than converging
+   - Solution: Implemented label smoothing and adjusted learning rates
 
-Generator and discriminator losses oscillating rather than converging
-Solution: Implemented label smoothing and adjusted learning rates
+2. **Mode Collapse**:
+   - Generator producing limited varieties of outputs
+   - Solution: Added batch normalization and proper architecture design
 
+3. **Evaluation Difficulty**:
+   - Objective assessment of GAN quality is difficult
+   - Solution: Combined visual inspection with downstream task performance metrics
 
-Mode Collapse:
+## Project Structure
 
-Generator producing limited varieties of outputs
-Solution: Added batch normalization and proper architecture design
-
-
-Evaluation Difficulty:
-
-Objective assessment of GAN quality is difficult
-Solution: Combined visual inspection with downstream task performance metrics
-
-
-
-Project Structure
 gan/
 │   ├── GAN_Notebook.ipynb
 │   └── GAN_Worked_Examples.ipynb
@@ -145,40 +143,36 @@ gan/
 │   └── fashion_mnist_generator.h5
 ├── requirements.txt
 └── README.md
-Requirements
 
-Python 3.7+
-TensorFlow 2.4+
-NumPy
-Matplotlib
-Jupyter Lab/Notebook
-A modern web browser for the demo
-4GB+ RAM recommended for training
+## Requirements
 
-Future Work
+- Python 3.7+
+- TensorFlow 2.4+
+- NumPy
+- Matplotlib
+- Jupyter Lab/Notebook
+- A modern web browser for the demo
+- 4GB+ RAM recommended for training
+
+## Future Work
+
 Potential extensions to this project include:
+1. Implementing more advanced GAN architectures (StyleGAN, WGAN-GP)
+2. Exploring cross-domain translation with CycleGAN
+3. Applying GANs to higher-resolution images and more complex datasets
+4. Incorporating Fréchet Inception Distance (FID) for quantitative evaluation
 
-Implementing more advanced GAN architectures (StyleGAN, WGAN-GP)
-Exploring cross-domain translation with CycleGAN
-Applying GANs to higher-resolution images and more complex datasets
-Incorporating Fréchet Inception Distance (FID) for quantitative evaluation
+## License
 
-License
 This project is licensed under License - see the LICENSE file for details.
 
-Acknowledgments
+## Acknowledgments
 
-Ian Goodfellow et al. for the original GAN paper
-Alec Radford et al. for the DCGAN architecture
-Mehdi Mirza et al. for the Conditional GAN approach
-TensorFlow team for the excellent deep learning framework
+- Ian Goodfellow et al. for the original GAN paper
+- Alec Radford et al. for the DCGAN architecture
+- Mehdi Mirza et al. for the Conditional GAN approach
+- TensorFlow team for the excellent deep learning framework
 
-Citation
+## Citation
+
 If you use this code in your research or project, please cite:
-@misc{gan-data-augmentation,
-  author = {Your Name},
-  title = {Generative Adversarial Networks for Data Augmentation},
-  year = {2025},
-  publisher = {GitHub},
-  howpublished = {\url{https://github.com/yourusername/gan-data-augmentation}}
-}
