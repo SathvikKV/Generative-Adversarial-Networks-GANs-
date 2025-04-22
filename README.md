@@ -1,20 +1,20 @@
 # Generative Adversarial Networks for Data Augmentation
 
-![GAN Generated MNIST Images](gan/website/gan_outputs/real_mnist_3.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/gan_mnist_3.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/aug_mnist_3_8.png)
+![GAN Generated MNIST Images](docs/gan_outputs/real_mnist_3.png)
+![GAN Generated MNIST Images](docs/gan_outputs/gan_mnist_3.png)
+![GAN Generated MNIST Images](docs/gan_outputs/aug_mnist_3_8.png)
 
-![GAN Generated MNIST Images](gan/website/gan_outputs/real_mnist_0.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/gan_mnist_0.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/aug_mnist_0_8.png)
+![GAN Generated MNIST Images](docs/gan_outputs/real_mnist_0.png)
+![GAN Generated MNIST Images](docs/gan_outputs/gan_mnist_0.png)
+![GAN Generated MNIST Images](docs/gan_outputs/aug_mnist_0_8.png)
 
-![GAN Generated MNIST Images](gan/website/gan_outputs/real_fashion_tshirt.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/gan_fashion_tshirt.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/aug_fashion_tshirt_8.png)
+![GAN Generated MNIST Images](docs/gan_outputs/real_fashion_tshirt.png)
+![GAN Generated MNIST Images](docs/gan_outputs/gan_fashion_tshirt.png)
+![GAN Generated MNIST Images](docs/gan_outputs/aug_fashion_tshirt_8.png)
 
-![GAN Generated MNIST Images](gan/website/gan_outputs/real_fashion_shirt.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/gan_fashion_shirt.png)
-![GAN Generated MNIST Images](gan/website/gan_outputs/aug_fashion_shirt_8.png)
+![GAN Generated MNIST Images](docs/gan_outputs/real_fashion_shirt.png)
+![GAN Generated MNIST Images](docs/gan_outputs/gan_fashion_shirt.png)
+![GAN Generated MNIST Images](docs/gan_outputs/aug_fashion_shirt_8.png)
 
 ## Overview
 
