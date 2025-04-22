@@ -129,7 +129,7 @@ Several challenges were encountered during implementation:
    - Solution: Combined visual inspection with downstream task performance metrics
 
 ## Project Structure
-
+```
 gan/
 │   ├── GAN_Notebook.ipynb
 │   └── GAN_Worked_Examples.ipynb
@@ -143,7 +143,7 @@ gan/
 │   └── fashion_mnist_generator.h5
 ├── requirements.txt
 └── README.md
-
+```
 ## Requirements
 
 - Python 3.7+
