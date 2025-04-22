@@ -5,6 +5,18 @@ markdown# Generative Adversarial Networks for Data Augmentation
 ![GAN Generated MNIST Images](gan/website/gan_outputs/gan_mnist_3.png)
 ![GAN Generated MNIST Images](gan/website/gan_outputs/aug_mnist_3_8.png)
 
+![GAN Generated MNIST Images](gan/website/gan_outputs/real_mnist_7.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/gan_mnist_7.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/aug_mnist_7_8.png)
+
+![GAN Generated MNIST Images](gan/website/gan_outputs/real_fashion_tshirt.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/gan_fashion_tshirt.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/aug_fashion_tshirt_8.png)
+
+![GAN Generated MNIST Images](gan/website/gan_outputs/real_fashion_shirt.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/gan_fashion_shirt.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/aug_fashion_shirt_8.png)
+
 ## Overview
 
 This repository demonstrates the implementation and application of Generative Adversarial Networks (GANs) for data augmentation. It includes comprehensive Jupyter notebooks, worked examples, and an interactive web demonstration to help understand and visualize GAN-generated images.
