@@ -67,12 +67,6 @@ Jupyter Notebooks
 ```bash
 # Start Jupyter Lab/Notebook
 jupyter lab
-```
-
-# Or
-
-```
-jupyter notebook
 
 Then open either:
 
@@ -87,10 +81,9 @@ To run the interactive web demo locally:
 ```bash
 Navigate to the web demo directory
 cd web_demo
-```
+
 
 # Start a simple HTTP server
-```bash
 python -m http.server
 
 Open your browser and go to:
