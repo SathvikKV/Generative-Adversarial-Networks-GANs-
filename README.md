@@ -1,9 +1,9 @@
 Here's the complete README.md in a single cell for easy copying:
 markdown# Generative Adversarial Networks for Data Augmentation
 
-![GAN Generated MNIST Images](gan/website/real_mnist_3.png)
-![GAN Generated MNIST Images](gan/website/gan_mnist_3.png)
-![GAN Generated MNIST Images](gan/website/aug_mnist_3_8.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/real_mnist_3.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/gan_mnist_3.png)
+![GAN Generated MNIST Images](gan/website/gan_outputs/aug_mnist_3_8.png)
 
 ## Overview
 
