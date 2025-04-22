@@ -16,6 +16,13 @@
 ![GAN Generated MNIST Images](docs/gan_outputs/gan_fashion_shirt.png)
 ![GAN Generated MNIST Images](docs/gan_outputs/aug_fashion_shirt_8.png)
 
+
+## Interface
+
+[Demo Website](https://sathvikkv.github.io/Generative-Adversarial-Networks-GANs-/)
+
+
+
 ## Overview
 
 This repository demonstrates the implementation and application of Generative Adversarial Networks (GANs) for data augmentation. It includes comprehensive Jupyter notebooks, worked examples, and an interactive web demonstration to help understand and visualize GAN-generated images.
